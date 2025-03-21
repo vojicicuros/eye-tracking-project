@@ -96,9 +96,9 @@ def graphics():
             screen.fill(white)
 
             # Permanent outer black border
-            pygame.draw.circle(screen, black, (x, y), radius + 6, 3)
+            pygame.draw.circle(screen, black, (x, y), radius, 3)
 
-            pygame.draw.circle(screen, black, (x, y), shrinking_radius + 3)  # Shrinking outer border
+            pygame.draw.circle(screen, black, (x, y), shrinking_radius + 2)  # Shrinking outer border
             pygame.draw.circle(screen, red, (x, y), shrinking_radius)
 
             draw_crosshair(screen, x, y)
